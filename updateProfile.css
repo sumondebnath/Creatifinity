@@ -62,3 +62,78 @@
     border: 1px solid black;
     padding: 5px;
 }
+
+
+
+
+
+
+
+@media only Screen and (min-width:320px) and (max-width:425px){
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    .settings-container{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .username-container{
+        display: grid;
+        place-items: center;
+    }
+
+    .username-container div input{
+        width: 380px;
+        height: 40px;
+    }
+    .update-profile-container{
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        display: grid;
+        place-items: center;
+    }
+    .update-profile-container .left-update-profile-container div{
+        margin-top: 10px;
+    }
+    .update-profile-container .right-update-profile-container div{
+        margin-top: 10px;
+    }
+    .update-profile-container .left-update-profile-container div input{
+        width: 380px;
+        height: 40px;
+        padding: 15px;
+    }
+    .update-profile-container .right-update-profile-container div input{
+        width: 380px;
+        height: 40px;
+        padding: 15px;
+    }
+    .update-profile-container .right-update-profile-container div .update-profile-update-button{
+        width: 380px;
+        height: 40px;
+        padding: 0px;
+        text-align: center;
+        color: whitesmoke;
+        background-color: #2e999c;
+        border: none;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .update-profile-container .right-update-profile-container div .update-profile-update-button:hover{
+        color: black;
+        background-color: #2B75DD;
+        cursor: pointer;
+    }
+    .gender-container select{
+        width: 380px;
+        height: 40px;
+    }
+    .image-container #image{
+        width: 380px;
+        height: 40px;
+        border: 1px solid black;
+        padding: 5px;
+    }
+}

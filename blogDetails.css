@@ -79,3 +79,38 @@
 .blog-review-container form div select option{
     font-size: 20px;
 }
+
+
+
+
+@media only Screen and (min-width:320px) and (max-width:425px){
+    .user-blog-review-container{
+        display: grid;
+        place-items: center;
+        margin-top: 50px;
+    }
+    .blog-avarage-review{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        width: 400px;
+        height: 300px;
+        padding: 50px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .blog-review-container{
+        /* border: 1px solid gray; */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        width: 400px;
+        height: 300px;
+        padding: 50px;
+    }
+    .blog-review-container form div{
+        /* display: flex;
+        justify-content: center;
+        align-items: start; */
+        display: grid;
+        place-items: center;
+        padding-top: 50px;
+    }
+}

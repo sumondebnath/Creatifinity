@@ -8,8 +8,9 @@ const blogHandle = ()=>{
         document.getElementById("blog-create-container").style.display = "block";
     }
     fetch("https://creatifinity-api.onrender.com/blog/list/").then((res)=> res.json()).then((data)=> {
-        console.log(data.results);
+        console.log(data.next);
         AllBlogs(data.results);
+        handlePagination(data);
     }).catch((err)=>console.log(err));
 };
 
@@ -26,6 +27,10 @@ const AllBlogs=(blogs)=>{
         `;
         parent.appendChild(div);
     });
+};
+
+const handlePagination=(data)=>{
+    console.log(data.next);
 };
 
 blogHandle();

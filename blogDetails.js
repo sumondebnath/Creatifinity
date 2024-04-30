@@ -48,7 +48,7 @@ const handleReview=(blog_id)=>{
             div.classList.add("avarage-review");
             div.innerHTML = `
                 <h3>Average Rating </h3>
-                <h1>${rating.toFixed(1)} / 5</h1>
+                <h1>${rating?rating.toFixed(1):"0"} / 5</h1>
             `;
             parent.appendChild(div);
         }
