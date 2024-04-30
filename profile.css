@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.top-container{
+    height: 80vh;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+}
+.inner-top-profile{
+    
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+.inner-top-profile img{
+    width: 40%;
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.inner-bottom-container{
+    position: absolute;
+    bottom: 100px;
+    right: 150px;
+}
+.profile-setting-container{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.category-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.category-container .category-part{
+    padding: 20px 100px;
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.category-container .category-part form h2{
+    font-weight: bold;
+}
+.category-container .category-part form div input{
+    width: 300px;
+    height: 35px;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.category-container .category-part form button{
+    padding: 5px 30px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #286090;
+    color: whitesmoke;
+}
+.category-container .category-part form button:hover{
+    background-color: #5CE1E6;
+    color: black;
+    cursor: pointer;
+}
+
+.post-container .post-blog{
+    border: 1px solid gray;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+.post-container .post-blog img{
+    width: 70%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.blog-settings{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.user-blog-details-container{
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.user-blog-details{
+    margin-bottom: 50px;
+}
+.user-blog-details img{
+    width: 100%;
+}
+.user-blog-details h5{
+    text-align: end;
+    margin: 20px;
+}
+.user-blog-details h2{
+    margin-top: 30px;
+    font-size: 35px;
+    
+}
+.user-blog-details p{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.user-blog-review-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.blog-avarage-review{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 450px;
+    height: 300px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.blog-avarage-review .avarage-review h3{
+    font-weight: bold;
+}
+.blog-avarage-review .avarage-review h1{
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.blog-review-container{
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 450px;
+    height: 300px;
+    padding: 100px;
+}
+.blog-review-container form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.blog-review-container form div label{
+    font-size: 30px;
+}
+.blog-review-container form div label svg{
+    display: inline;
+    width: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.blog-review-container form div select{
+    width: 200px;
+    height: 50px;
+    padding: 5px 10px;
+}
+.blog-review-container form div select option{
+    font-size: 20px;
+}

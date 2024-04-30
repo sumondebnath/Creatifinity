@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./images/title_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editBlog.css">
+    <link rel="stylesheet" href="createBlog.css">
+</head>
+<body >
+    <header >
+        <nav class="header-container">
+            <div class="nav-container container">
+              <div class="nav-left">
+                <div>
+                  <a href="index.html"><img src="./images/nav_image.png" alt="navber-image"></a>
+                </div>
+                <div class="items d-flex">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="myBlog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </div>
+              </div>
+              <div class="nav-right">
+                <div class="left-btn" id="lg-btn">
+                  <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="ragistration.html">Registration</a></li>
+                  </ul>
+                </div>
+                <div class="right-btn" id="lp-btn">
+                  <ul>
+                    <li onclick="handleLogout(event)"><a  href="">Logout</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- <div class="container">
+            <div class="top-container">
+              <div class="inner-top-profile">
+                <img src="" alt="">
+              </div> 
+
+              <div class="inner-bottom-container">
+                <p>user name</p>
+                <h3>first_name Last_name</h3>
+                <p>gender</p>
+                <h5>email</h5>
+              </div>
+            </div>
+
+          </div> -->
+    </header>
+
+    <main class="container">
+        <h2 class="text-center mt-5">Edit your blog post</h2>
+        <div class="blog-write-container">
+          <form id="edit-form-instance" action="" method="post" enctype="multipart/form-data">
+              <!-- <div>
+                  <div class="dropdown">
+                      <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Categories
+                      </button>
+                      <ul id="dropdown" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+              </div> -->
+              <div>
+                <select id="category-selector" class="form-select" aria-label="Default select example">
+                  <option selected>Select Category</option>
+                  <!-- <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option> -->
+                </select>
+                <!-- <p>Add your own Categories  <a href="profile.html"> Click Here</a></p> -->
+              </div>
+              <div>
+                  <label for="title-input">Title</label> <br>
+                  <input type="text" id="title-input" name="title">
+              </div>
+              <div>
+                  <label for="body-input">Description</label> <br>
+                  <!-- <input type="text" id="body-input" name="body"> -->
+                  <textarea name="body" id="body-input" cols="40" rows="10"></textarea>
+              </div>
+              <div>
+                  <label for="image-input">Image</label> <br>
+                  <input type="file" id="image-input" name="image">
+              </div>
+              <div>
+                  <input onclick="handleEditBlog(event)" class="blog-post" type="submit" value="Update">
+              </div>
+          </form>
+  
+        </div>
+      </main>
+
+
+    <!-- footer sestion -->
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-logo-container">
+          <img src="./images/title_logo.png" alt="footer-logo">
+          <div class="footer-useful-links">
+            <div class="footer-icon">
+              <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="footer-icon">
+              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm0,96c-43.453,0 -48.902,0.184 -65.968,0.963c-17.03,0.777 -28.661,3.482 -38.839,7.437c-10.521,4.089 -19.444,9.56 -28.339,18.455c-8.895,8.895 -14.366,17.818 -18.455,28.339c-3.955,10.177 -6.659,21.808 -7.437,38.838c-0.778,17.066 -0.962,22.515 -0.962,65.968c0,43.453 0.184,48.902 0.962,65.968c0.778,17.03 3.482,28.661 7.437,38.838c4.089,10.521 9.56,19.444 18.455,28.34c8.895,8.895 17.818,14.366 28.339,18.455c10.178,3.954 21.809,6.659 38.839,7.436c17.066,0.779 22.515,0.963 65.968,0.963c43.453,0 48.902,-0.184 65.968,-0.963c17.03,-0.777 28.661,-3.482 38.838,-7.436c10.521,-4.089 19.444,-9.56 28.34,-18.455c8.895,-8.896 14.366,-17.819 18.455,-28.34c3.954,-10.177 6.659,-21.808 7.436,-38.838c0.779,-17.066 0.963,-22.515 0.963,-65.968c0,-43.453 -0.184,-48.902 -0.963,-65.968c-0.777,-17.03 -3.482,-28.661 -7.436,-38.838c-4.089,-10.521 -9.56,-19.444 -18.455,-28.339c-8.896,-8.895 -17.819,-14.366 -28.34,-18.455c-10.177,-3.955 -21.808,-6.66 -38.838,-7.437c-17.066,-0.779 -22.515,-0.963 -65.968,-0.963Zm0,28.829c42.722,0 47.782,0.163 64.654,0.933c15.6,0.712 24.071,3.318 29.709,5.509c7.469,2.902 12.799,6.37 18.397,11.969c5.6,5.598 9.067,10.929 11.969,18.397c2.191,5.638 4.798,14.109 5.509,29.709c0.77,16.872 0.933,21.932 0.933,64.654c0,42.722 -0.163,47.782 -0.933,64.654c-0.711,15.6 -3.318,24.071 -5.509,29.709c-2.902,7.469 -6.369,12.799 -11.969,18.397c-5.598,5.6 -10.928,9.067 -18.397,11.969c-5.638,2.191 -14.109,4.798 -29.709,5.509c-16.869,0.77 -21.929,0.933 -64.654,0.933c-42.725,0 -47.784,-0.163 -64.654,-0.933c-15.6,-0.711 -24.071,-3.318 -29.709,-5.509c-7.469,-2.902 -12.799,-6.369 -18.398,-11.969c-5.599,-5.598 -9.066,-10.928 -11.968,-18.397c-2.191,-5.638 -4.798,-14.109 -5.51,-29.709c-0.77,-16.872 -0.932,-21.932 -0.932,-64.654c0,-42.722 0.162,-47.782 0.932,-64.654c0.712,-15.6 3.319,-24.071 5.51,-29.709c2.902,-7.468 6.369,-12.799 11.968,-18.397c5.599,-5.599 10.929,-9.067 18.398,-11.969c5.638,-2.191 14.109,-4.797 29.709,-5.509c16.872,-0.77 21.932,-0.933 64.654,-0.933Zm0,49.009c-45.377,0 -82.162,36.785 -82.162,82.162c0,45.377 36.785,82.162 82.162,82.162c45.377,0 82.162,-36.785 82.162,-82.162c0,-45.377 -36.785,-82.162 -82.162,-82.162Zm0,135.495c-29.455,0 -53.333,-23.878 -53.333,-53.333c0,-29.455 23.878,-53.333 53.333,-53.333c29.455,0 53.333,23.878 53.333,53.333c0,29.455 -23.878,53.333 -53.333,53.333Zm104.609,-138.741c0,10.604 -8.597,19.199 -19.201,19.199c-10.603,0 -19.199,-8.595 -19.199,-19.199c0,-10.604 8.596,-19.2 19.199,-19.2c10.604,0 19.201,8.596 19.201,19.2Z"/></svg>
+            </div>
+            <div class="footer-icon">
+              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="footer-support">
+          <h2>Support</h2>
+          <h5>Resources</h5>
+          <h5>Community</h5>
+          <h5>Service</h5>
+          <h5>Policy</h5>
+        </div>
+        <div class="footer-contact-info">
+          <h2>CONTACT INFO</h2>
+          <h5>Address: <small>Ka-28 Mir-Shapnochura,Dhaka, Bangladesh.</small></h5>
+          <h5>Phone : <small>+880 1854397705</small></h5>
+          <h5>Email : <small>debnathsumon1708@gmail.com</small></h5>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center pt-2 pb-2">
+        <p><span class="text-white">©</span> 2024 Blog Site. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- script file -->
+    <script src="app.js"></script>
+    <script src="editBlog.js"></script>
+    <script src="./logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image:linear-gradient(rgba(132, 196, 151, 0.2), rgba(41, 112, 19, 0.4)), url('./images/registerimage.jpeg');
+    /* background-blend-mode: overlay; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgba(255, 255, 255, 0.986); */
+    height: 100vh;
+}
+label{
+    color: whitesmoke;
+}
+.register-image{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+.register-image h1{
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: whitesmoke;
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+.register-container{
+    display: grid;
+    place-items: center;
+    width: 600px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.input-field{
+    width: 300px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.input-btn{
+    padding: 8px 30px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(20, 119, 165);
+    color: whitesmoke;
+    border: none;
+}
+.input-btn:hover{
+    background-color: rgb(10, 65, 116);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.register-container form p{
+    margin-top: 10px;
+    color: rgb(53, 59, 50);
+}
+.register-container form p a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.register-container form p a:hover{
+    color: blue;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.blog-write-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    margin-top: 10px;
+}
+.dropdown button{
+    width: 400px;
+    background-color: #2B75DD;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dropdown ul{
+    width: 400px;
+}
+#title-input{
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 5px;
+}
+textarea{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 10px;
+}
+#image-input{
+    width: 400px;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.blog-post{
+    width: 200px;
+    height: 40px;
+    /* padding: 10px 20px; */
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.blog-post:hover{
+    background-color: #2B75DD;
+    color: whitesmoke;
+    border: none;
+}

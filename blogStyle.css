@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+#blog-create-container{
+    display: none;
+}
+.blog-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.blog-create a{
+    text-decoration: none;
+    text-transform: inherit;
+    margin-left: 40px;
+}
+.blog-create a:hover{
+    text-decoration: underline;
+    color: rgb(22, 110, 41);
+}
+
+.blog-container{
+    margin-top: 20px;
+}
+.blog-container .main-blog{
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-top: 30px;
+    padding: 20px;
+}
+.blog-container .main-blog h2{
+    font-size: 37px;
+}
+.blog-container .main-blog img{
+    width: 80%;
+    /* width: 70%; */
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.blog-container .main-blog p{
+    margin-top: 20px;
+    margin-left: 50px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
