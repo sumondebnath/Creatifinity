@@ -3,7 +3,7 @@ const getValue = (id) => {
   return value;
 };
 
-const handleUpdateProfile = (event) => {
+const handleUpdateProfile = async (event) => {
   event.preventDefault();
   const username = getValue("username");
   const first_name = getValue("first_name");
@@ -41,7 +41,7 @@ const handleUpdateProfile = (event) => {
   userFormData.append("last_name", last_name);
   userFormData.append("email", email);
 
-  fetch(`https://creatifinity-api.onrender.com/user/${user_id}/`, {
+  await fetch(`https://creatifinity-api.onrender.com/user/${user_id}/`, {
     method: "PUT",
     body: userFormData,
   })
@@ -56,7 +56,7 @@ const handleUpdateProfile = (event) => {
   accountFormData.append("bio", bio);
   accountFormData.append("user", user_id);
 
-  fetch(
+  await fetch(
     `https://creatifinity-api.onrender.com/account/account/?user_id=${user_id}`
   )
     .then((res) => res.json())
@@ -82,7 +82,7 @@ const handleUpdateProfile = (event) => {
   addressFromData.append("country", country);
   addressFromData.append("user", user_id);
 
-  fetch(
+  await fetch(
     `https://creatifinity-api.onrender.com/account/address/?user_id=${user_id}`
   )
     .then((res) => res.json())
@@ -98,14 +98,11 @@ const handleUpdateProfile = (event) => {
         .then((res) => res.json())
         .then((add_data) => {
           console.log(add_data);
-          
         })
         .catch((err) => console.error("error", err));
-        window.location.href = "profile.html";
+      window.location.href = "profile.html";
     })
     .catch((err) => console.error("error", err));
-
-    
 };
 
 const updateUserInstance = (data) => {
@@ -130,8 +127,8 @@ const updateAddressInstance = (data) => {
   document.getElementById("postal_code").value = data[0].postal_code;
 };
 
-const getUserAllData = (user_id) => {
-  fetch(`https://creatifinity-api.onrender.com/user/${user_id}/`)
+const getUserAllData = async (user_id) => {
+  await fetch(`https://creatifinity-api.onrender.com/user/${user_id}/`)
     .then((res) => res.json())
     .then((user_data) => {
       console.log(user_data);
@@ -139,7 +136,7 @@ const getUserAllData = (user_id) => {
     })
     .catch((err) => console.log("error", err));
 
-  fetch(
+  await fetch(
     `https://creatifinity-api.onrender.com/account/account/?user_id=${user_id}`
   )
     .then((res) => res.json())
@@ -150,7 +147,7 @@ const getUserAllData = (user_id) => {
     })
     .catch((err) => console.error("error", err));
 
-  fetch(
+  await fetch(
     `https://creatifinity-api.onrender.com/account/address/?user_id=${user_id}`
   )
     .then((res) => res.json())
